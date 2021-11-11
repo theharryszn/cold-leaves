@@ -16,4 +16,4 @@ Run this command to start the apollo server in dev mode
     yarn run dev
 ```
 
-Am still gonna try with Type-Graphql
+Also tried this with typegraphql. Check it out [code-leaves-grande](https://github.com/OpeAbidemi/cold-leaves-grande)
