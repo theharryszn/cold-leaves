@@ -7,13 +7,14 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
+    "generate:supergraph": "rover supergraph compose --config ./supergraph-config.yaml > supergraph.graphql",
     "dev": "nodemon --exec ts-node src/index.ts "
   },
   "dependencies": {
-    "@apollo/gateway": "^0.43.1",
-    "apollo-server": "^3.5.0",
-    "chalk": "^4.1.2",
-    "graphql": "^16.0.1"
+    "@apollo/gateway": "0.43.1",
+    "apollo-server": "3.5.0",
+    "graphql": "15.7.2",
+    "chalk": "^4.1.2"
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
