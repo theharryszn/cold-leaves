@@ -6,11 +6,10 @@
   "author": "Ope Abidemi Harry <opeabidemi@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "yarn run tsc",
+    "postinstall": "yarn run tsc",
     "generate:supergraph": "rover supergraph compose --config ./supergraph-config.yaml > supergraph.graphql",
     "dev": "nodemon --exec ts-node src/index.ts ",
-    "start": "node dist/index.js",
-    "deploy": "yarn run build && yarn run start"
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@apollo/gateway": "0.43.1",
