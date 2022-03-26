@@ -69,6 +69,8 @@ const server = new ApolloServer({
   schema: buildFederatedSchema([{ typeDefs, resolvers}]),
 });
 
-server.listen().then(({ url }) => {
+server.listen({
+  port: process.env.PORT || 5000
+}).then(({ url }) => {
   logger.success(`🚀 Gateway ready at ${url}`);
 }).catch(err => {logger.error(err)});
