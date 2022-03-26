@@ -67,6 +67,7 @@ const resolvers : GraphQLResolverMap = {
 
 const server = new ApolloServer({
   schema: buildFederatedSchema([{ typeDefs, resolvers}]),
+  introspection: true
 });
 
 server.listen({
